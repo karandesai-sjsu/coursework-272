@@ -34,12 +34,16 @@
             <a href="/" class="navbar__links">Home</a>
           </li>
           <li class="navbar__item">
-            <a href="/tech.html" class="navbar__links">Tech</a>
+            <a href="tech.php" class="navbar__links">Tech</a>
           </li>
           <li class="navbar__item">
             <a href="/" class="navbar__links">Products</a>
           </li>
-          <li class="navbar__btn"><a href="/" class="button">Sign Up</a></li>
+          <li class="navbar__item">
+            <a href="contact.php" class="navbar__links">Contacts</a>
+          </li>
+          <li class="navbar__btn">
+            <a href="signup.php" class="button">Sign Up</a></li>
         </ul>
       </div>
     </nav>
@@ -105,17 +109,11 @@
             <a href="/">Influencers</a>
           </div>
           <div class="footer__link--items">
-            <h2>Contant Us</h2>
-            <?php
-
-              $filename = 'contact.txt';
-              $f = fopen($filename, 'r');
-
-              if ($f) {
-              $contents = fread($f, filesize($filename));
-              fclose($f);
-              echo "<span style='color:white;white-space: pre-line;'>$contents</span>";
-            }?>
+          <h2>Contant Us</h2>
+            <a href="/">Contact</a>
+            <a href="/">Support</a>
+            <a href="/">Destinations</a>
+            <a href="/">Sponsorship</a>
           </div>
         </div>
       </div>
