@@ -119,9 +119,16 @@
         // Close the file
         fclose($file);
         ?>
-    </table>        
-    </div>
+    </table>   
     
+    //curl req
+
+
+    </div>
+ 
+    <div>
+      // database fetch
+    </div>
     
     <!-- Footer Section -->
     <div class="footer__container">
