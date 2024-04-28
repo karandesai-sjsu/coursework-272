@@ -198,6 +198,10 @@
   }
 }
 
+.page {
+  background-color: #141414;
+}
+
 /* Hero Section CSS  */
 .main {
   background-color: #141414;
@@ -471,6 +475,134 @@
   .services__card {
     width: 300px;
   }
+}
+
+/* Products section */
+.products {
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #141414;
+  margin: 5rem;
+}
+
+.products h1 {
+  background-color: #ff8177;
+  background-image: linear-gradient(
+    to right,
+    #ff8177 0%,
+    #ff867a 0%,
+    #ff8c7f 21%,
+    #f99185 52%,
+    #cf556c 78%,
+    #b12a5b 100%
+  );
+  background-size: 100%;
+  /* margin: 5rem; */
+  font-size: 2.5rem;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.product_card {
+  margin: 1rem;
+  height: 400px;
+  width: 400px;
+  border-radius: 4px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(17, 17, 17, 0.6) 100%
+    ),
+    url("images/vr-set.jpg");
+  background-size: cover;
+  position: relative;
+  color: #ffff;
+}
+
+.product_card:nth-child(2) {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(17, 17, 17, 0.6) 100%
+    ),
+    url("images/ps5.jpg");
+}
+.product_card:nth-child(3) {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(17, 17, 17, 0.6) 100%
+    ),
+    url("images/controller.jpg");
+}
+.product_card:nth-child(4) {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(17, 17, 17, 0.6) 100%
+    ),
+    url("images/display-set.jpg");
+}
+.product_card:nth-child(5) {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(17, 17, 17, 0.6) 100%
+    ),
+    url("images/chair.jpg");
+}
+.product_card:nth-child(6) {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(17, 17, 17, 0.6) 100%
+    ),
+    url("images/keyboard.jpg");
+}
+
+.services h2 {
+  position: absolute;
+  top: 350px;
+  left: 30px;
+}
+
+.product_card p {
+  position: absolute;
+  top: 300px;
+  left: 30px;
+}
+.product_card h2 {
+  position: absolute;
+  top: 270px;
+  left: 30px;
+}
+
+.product_card button {
+  color: #ffff;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: #f77062;
+  position: absolute;
+  top: 340px;
+  left: 30px;
+  font-size: 1rem;
+}
+
+.product_card button:hover {
+  background-color: #4837ff;
+}
+
+.product_card:hover {
+  transform: scale(1.075);
+  transition: 0.2s ease-in;
+  cursor: pointer;
 }
 
 /* Footer CSS */

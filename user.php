@@ -6,7 +6,64 @@
     -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML CSS WEBSITE</title>
+    <title>Change User Info</title>
+    <style>
+      body {
+        background-color: #141414;
+      }
+      .user__info {
+            width: 50%;
+            margin : 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+        }
+
+        .input_child {
+          flex: 1 0 31%; /* explanation below */
+          margin: 5px;
+          height: 70px;
+        }        
+
+        .user__info label {
+            margin-bottom: 5px;
+            color: #333;
+        }
+        
+        .user__info input[type="text"],
+        .user__info input[type="password"],
+        .user__info input[type="email"],
+        .user__info input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+        
+        .user__info input[type="submit"] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .user__info input[type="submit"]:hover {
+            background :#4347ff
+            transition: all 0.35s;
+            border-radius: 3px;
+        }
+    </style>
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
@@ -34,10 +91,13 @@
             <a href="/" class="navbar__links">Home</a>
           </li>
           <li class="navbar__item">
-            <a href="/tech.html" class="navbar__links">Tech</a>
+            <a href="user.html" class="navbar__links">User</a>
           </li>
           <li class="navbar__item">
-            <a href="/" class="navbar__links">Products</a>
+            <a href="products.php" class="navbar__links">Products</a>
+          </li>
+          <li class="navbar__item">
+            <a href="contact.php" class="navbar__links">Contacts</a>
           </li>
           <li class="navbar__btn"><a href="/signup.php" class="button">Sign Up</a></li>
         </ul>
@@ -48,32 +108,47 @@
     <div class="main">
       <div class="main__container">
         <div class="main__content">
-          <h1>This is TECH page</h1>
+          <h1>NEXT GENERATION</h1>
           <h2>TECHNOLOGY</h2>
           <p>See what makes us different.</p>
           <button class="main__btn"><a href="/">GET Started</a></button>
         </div>
         <div class="main__img--container">
-          <img src="images/pic2.jpg" alt="pic" id="main__img"/>
+          <img src="images/pic1.svg" alt="pic" id="main__img"/>
         </div>
       </div>
     </div>
 
-    <!-- Services Sections -->
-    <div class="services">
-      <h1>See what hype is about</h1>
-      <div class="services__container">
-        <div class="services__card">
-          <h2>Experience Bliss</h2>
-          <p>AI Powered Technology</p>
-          <button>Get Started</button>
-        </div>
-        <div class="services__card">
-          <h2>Are you Ready</h2>
-          <p>Take the Leap</p>
-          <button>Get Started</button>
-        </div>
+
+    <!-- User info section -->
+    <div class="user__info">
+    <form action="save_user.php" method="post">
+      <div class="input_child">
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" required><br><br>
       </div>
+      <div class="input_child">
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" required><br><br>
+      </div>
+      <div class="input_child">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+      </div>
+      <div class="input_child">
+        <label for="home_address">Home Address:</label>
+        <input type="text" id="home_address" name="home_address" required><br><br>
+      </div>
+      <div class="input_child">
+        <label for="home_phone">Home Phone:</label>
+        <input type="tel" id="home_phone" name="home_phone"><br><br>
+      </div>
+      <div class="input_child">
+        <label for="cell_phone">Cell Phone:</label>
+        <input type="tel" id="cell_phone" name="cell_phone" required><br><br>
+      </div>
+        <input type="submit" value="Submit">
+    </form>
     </div>
     
     <!-- Footer Section -->

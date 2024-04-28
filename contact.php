@@ -127,7 +127,7 @@
     </div>
  
     <div>
-      // database fetch
+      <!-- database fetch -->
     </div>
     
     <!-- Footer Section -->
