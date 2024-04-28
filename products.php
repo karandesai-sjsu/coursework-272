@@ -71,32 +71,32 @@
                 <div class="product_card">
                     <h2>VR Set</h2>
                     <p>Step into Virtual World</p>
-                    <button>Interested</button>
+                    <a href="product_click.php?product_id=1"><button>Interested</button></a>
                 </div>
                 <div class="product_card">
                     <h2>Console</h2>
                     <p>Are you Ready to Play</p>
-                    <button>Interested</button>
+                    <a href="product_click.php?product_id=2"><button>Interested</button></a>
                 </div>
                 <div class="product_card">
                     <h2>Feedback Controllers</h2>
                     <p>Highten your gaming experience</p>
-                    <button>Interested</button>
+                    <a href="product_click.php?product_id=3"><button>Interested</button></a>
                 </div>
                 <div class="product_card">
                     <h2>Display Set</h2>
                     <p>Impersive Experience</p>
-                    <button>Interested</button>
+                    <a href="product_click.php?product_id=4"><button>Interested</button></a>
                 </div>
                 <div class="product_card">
                     <h2>Gaming Chair</h2>
                     <p>Ultimate Comfort</p>
-                    <button>Interested</button>
+                    <a href="product_click.php?product_id=5"><button>Interested</button></a>
                 </div>
                 <div class="product_card">
                     <h2>Gaming Keyboard</h2>
                     <p>G-sync clicks</p>
-                    <button>Interested</button>
+                    <a href="product_click.php?product_id=6"><button>Interested</button></a>
                 </div>
         </div>
         </div>
